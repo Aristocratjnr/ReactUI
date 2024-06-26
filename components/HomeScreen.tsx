@@ -1,7 +1,7 @@
 // components/HomeScreen.tsx
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Index from './Index';
+import Index from '@/app-example/(tabs)/App'
 
 export default function HomeScreen() {
   return (
