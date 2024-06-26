@@ -15,7 +15,7 @@ export default function index() {
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Settings" component={SettingsScreen} />
       </Tab.Navigator>
-      <ThemeProvider children={undefined} />
+      <ThemeProvider />
     </NavigationContainer>
   );
 }
