@@ -1,7 +1,7 @@
 // components/SettingsScreen.tsx
 import React, { useContext } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
-import ThemeText from '@/components/ThemeText';
+import ThemeText from '@/components/ThemedText';
 
 export default function SettingsScreen() {
   const { theme, toggleTheme } = useContext(ThemeText);

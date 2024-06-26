@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '@/components/HomeScreen';
 import SettingsScreen from '@/components/SettingsScreen';
-import ThemeProvider from '@/components/ThemeContext';
+import ThemeText from '@/components/ThemedText';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,7 +15,7 @@ export default function App() {
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Settings" component={SettingsScreen} />
       </Tab.Navigator>
-      <ThemeProvider />
+      <ThemeText />
     </NavigationContainer>
   );
 }
