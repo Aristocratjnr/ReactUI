@@ -8,7 +8,7 @@ import ThemeProvider from '@/components/ThemeContext';
 
 const Tab = createBottomTabNavigator();
 
-export default function index() {
+export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>

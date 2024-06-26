@@ -1,7 +1,7 @@
-// screens/HomeScreen.js
+// components/HomeScreen.tsx
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Index from '../components/Index';
+import Index from './Index';
 
 export default function HomeScreen() {
   return (
@@ -17,9 +17,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#f8f9fa',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
   },
 });
