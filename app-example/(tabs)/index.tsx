@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '@/components/HomeScreen';
 import SettingsScreen from '@/components/SettingsScreen';
-import { ThemeProvider } from '@/components/ThemeContext'
+import ThemeProvider from '@/components/ThemeContext';
 
 const Tab = createBottomTabNavigator();
 
