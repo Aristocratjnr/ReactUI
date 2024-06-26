@@ -1,12 +1,12 @@
 // screens/HomeScreen.js
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import Index from '../components/Index';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome back, Eric Atsu</Text>
-      {/* Add more components to match the UI design */}
+      <Index />
     </View>
   );
 }
