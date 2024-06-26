@@ -1,10 +1,15 @@
 // components/SettingsScreen.tsx
 import React, { useContext } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
-import ThemeText from '@/components/ThemedText';
+import { ThemedText } from '@/components/ThemedText'; // Import the correct context object
+
+interface ThemeContextType {
+  theme: string;
+  toggleTheme: () => void;
+}
 
 export default function SettingsScreen() {
-  const { theme, toggleTheme } = useContext(ThemeText);
+  const { theme, toggleTheme } = useContext<ThemeContextType>(ThemedText); // Use the correct context object
 
   return (
     <View style={[styles.container, theme === 'light' ? styles.lightContainer : styles.darkContainer]}>
